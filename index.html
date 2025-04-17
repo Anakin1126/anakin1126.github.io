@@ -42,7 +42,7 @@
       padding: 0 1rem;
     }
 
-    .intro {
+    .intro, .projects {
       background: white;
       padding: 2rem;
       border-radius: 10px;
@@ -50,10 +50,11 @@
       margin-bottom: 2rem;
     }
 
-    .projects {
-      text-align: center;
-      font-size: 1.2rem;
-      color: #666;
+    .projects iframe {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+      height: 600px;
     }
 
     footer {
@@ -79,17 +80,26 @@
 
   <div class="container">
     <div class="intro">
-      <h2>Hello! 👋</h2>
+      <h2>Hello, and welcome!</h2>
       <p>
-        This is a newly created space where I plan to share my personal projects and ideas.
-        I'm very passionate about data, statistics, and machine learning — and I want this
-        to become a public record of my learning journey, experiments, and tools.
+        I'm a Quantitative Analyst working in the field of energy commodities trading, with a strong background in Quant Finance and Data Science.
+        This portfolio is a space to share my projects, thoughts, and experiments — mainly in Python.
       </p>
       <p>
-        I work primarily in Python and enjoy combining financial modeling with modern ML techniques.
-        More content will be added soon. Stay tuned!
+        Here you'll find deep dives into statistics, machine learning, and financial modeling. This journey is just beginning, and I'm excited to make it public.
+        More content will be uploaded soon, but for now, feel free to explore what's here.
       </p>
     </div>
+
+    <div class="projects">
+      <h2>📈 Linear Regression from Scratch</h2>
+      <p>
+        A hands-on implementation of a linear regression model using the normal equation, applied to the California Housing Prices dataset.
+      </p>
+      <iframe src="normal_equation.html"></iframe>
+    </div>
+  </div>
+
 
     <div class="projects">
       🚧 Projects coming soon...
