@@ -7510,6 +7510,30 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8aa63bb2-c936-441c-b84a-3225fa7c7c6d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="%7C-California-Housing-Dataset-%7C">| California Housing Dataset |<a class="anchor-link" href="#%7C-California-Housing-Dataset-%7C">¶</a></h2><p>This dataset contains information collected from the 1990 California census. It is commonly used for regression tasks, where the goal is to predict the <strong>median house value</strong> in a given district based on various demographic and geographic features.</p>
+<h3 id="%E2%9E%A2-Features:">➢ Features:<a class="anchor-link" href="#%E2%9E%A2-Features:">¶</a></h3><ul>
+<li><strong>MedInc</strong>: Median income in the block group (in tens of thousands of dollars).</li>
+<li><strong>HouseAge</strong>: Median age of houses in the block group.</li>
+<li><strong>AveRooms</strong>: Average number of rooms per household.</li>
+<li><strong>AveBedrms</strong>: Average number of bedrooms per household.</li>
+<li><strong>Population</strong>: Total population in the block group.</li>
+<li><strong>AveOccup</strong>: Average number of people per household.</li>
+<li><strong>Latitude</strong>: Geographical latitude of the block group.</li>
+<li><strong>Longitude</strong>: Geographical longitude of the block group.</li>
+</ul>
+<h3 id="%E2%98%85-Target-Variable:">★ Target Variable:<a class="anchor-link" href="#%E2%98%85-Target-Variable:">¶</a></h3><ul>
+<li><strong>MedianHouseValue</strong>: Median house value for California districts, expressed in <strong>hundreds of thousands of dollars</strong> ($100,000).</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5fd784ce-ed64-4f06-a3a0-ecce7fca98b9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7539,12 +7563,38 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=676347ed-7e67-4953-8fa7-e50b9fd0ff02">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7cc27dac-8bf4-4c9c-9e33-7584f3af22e5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">fetch_california_housing</span><span class="p">()</span><span class="o">.</span><span class="n">DESCR</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>'.. _california_housing_dataset:\n\nCalifornia Housing dataset\n--------------------------\n\n**Data Set Characteristics:**\n\n:Number of Instances: 20640\n\n:Number of Attributes: 8 numeric, predictive attributes and the target\n\n:Attribute Information:\n    - MedInc        median income in block group\n    - HouseAge      median house age in block group\n    - AveRooms      average number of rooms per household\n    - AveBedrms     average number of bedrooms per household\n    - Population    block group population\n    - AveOccup      average number of household members\n    - Latitude      block group latitude\n    - Longitude     block group longitude\n\n:Missing Attribute Values: None\n\nThis dataset was obtained from the StatLib repository.\nhttps://www.dcc.fc.up.pt/~ltorgo/Regression/cal_housing.html\n\nThe target variable is the median house value for California districts,\nexpressed in hundreds of thousands of dollars ($100,000).\n\nThis dataset was derived from the 1990 U.S. census, using one row per census\nblock group. A block group is the smallest geographical unit for which the U.S.\nCensus Bureau publishes sample data (a block group typically has a population\nof 600 to 3,000 people).\n\nA household is a group of people residing within a home. Since the average\nnumber of rooms and bedrooms in this dataset are provided per household, these\ncolumns may take surprisingly large values for block groups with few households\nand many empty houses, such as vacation resorts.\n\nIt can be downloaded/loaded using the\n:func:`sklearn.datasets.fetch_california_housing` function.\n\n.. topic:: References\n\n    - Pace, R. Kelley and Ronald Barry, Sparse Spatial Autoregressions,\n      Statistics and Probability Letters, 33 (1997) 291-297\n'</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=676347ed-7e67-4953-8fa7-e50b9fd0ff02">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Load the dataset and create DataFrame</span>
@@ -7577,7 +7627,7 @@ a.anchor-link {
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7681,7 +7731,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Visually inspect data through coordinates</span>
@@ -7733,7 +7783,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Set up the plotting grid for lineplots (quick value inspection)</span>
@@ -7783,7 +7833,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Outliers detection for selected features</span>
@@ -7869,7 +7919,7 @@ dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Change in linear correlation between feature and target variable after removing outliers:</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
@@ -7892,7 +7942,7 @@ dtype: float64
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>MedInc         0.0186
 HouseAge      -0.0015
@@ -7913,7 +7963,7 @@ Name: MedHouseVal, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># There are some variables far from being (log)normal - let's isolate them</span>
@@ -7979,7 +8029,7 @@ Name: MedHouseVal, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Identify log-transformed columns</span>
@@ -8023,7 +8073,7 @@ Name: MedHouseVal, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Split into predictors and target variable</span>
@@ -8055,7 +8105,7 @@ Name: MedHouseVal, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># All the steps to make our prediction through a linear regression</span>
@@ -8086,7 +8136,7 @@ Name: MedHouseVal, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Fuction to evaluate the model with the most common metrics</span>
@@ -8111,8 +8161,8 @@ Name: MedHouseVal, dtype: float64</pre>
     <span class="k">if</span> <span class="n">inputs</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">valid_spaces</span> <span class="ow">or</span> <span class="n">outputs</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">valid_spaces</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"`inputs` and `outputs` must be either 'log' or 'original'."</span><span class="p">)</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🧠 Model predicted in: </span><span class="si">{</span><span class="n">inputs</span><span class="si">}</span><span class="s2"> space."</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"📈 Evaluating in:      </span><span class="si">{</span><span class="n">outputs</span><span class="si">}</span><span class="s2"> space.</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"*** Model predicted in: </span><span class="si">{</span><span class="n">inputs</span><span class="si">}</span><span class="s2"> space."</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"*** Evaluating in:      </span><span class="si">{</span><span class="n">outputs</span><span class="si">}</span><span class="s2"> space.</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 
     <span class="c1"># Transform values accordingly</span>
     <span class="k">if</span> <span class="n">inputs</span> <span class="o">==</span> <span class="s2">"log"</span> <span class="ow">and</span> <span class="n">outputs</span> <span class="o">==</span> <span class="s2">"original"</span><span class="p">:</span>
@@ -8130,11 +8180,11 @@ Name: MedHouseVal, dtype: float64</pre>
     <span class="n">r2</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">ss_res</span> <span class="o">/</span> <span class="n">ss_tot</span>
 
     <span class="c1"># Display results</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"📊 Evaluation Results — </span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"--- |Evaluation Results| — </span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"────────────────────────────────────"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🔹 MSE : </span><span class="si">{</span><span class="n">mse</span><span class="si">:</span><span class="s2">,.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🔹 RMSE: </span><span class="si">{</span><span class="n">rmse</span><span class="si">:</span><span class="s2">,.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🔹 R²  : </span><span class="si">{</span><span class="n">r2</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"· MSE : </span><span class="si">{</span><span class="n">mse</span><span class="si">:</span><span class="s2">,.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"· RMSE: </span><span class="si">{</span><span class="n">rmse</span><span class="si">:</span><span class="s2">,.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"· R²  : </span><span class="si">{</span><span class="n">r2</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"────────────────────────────────────</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="p">{</span><span class="s2">"MSE"</span><span class="p">:</span> <span class="n">mse</span><span class="p">,</span> <span class="s2">"RMSE"</span><span class="p">:</span> <span class="n">rmse</span><span class="p">,</span> <span class="s2">"R2"</span><span class="p">:</span> <span class="n">r2</span><span class="p">}</span>
@@ -8148,7 +8198,7 @@ Name: MedHouseVal, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Set a random seed for reproducibility</span>
@@ -8201,7 +8251,7 @@ Subsequently, we train the model to predict <strong>y</strong> directly and comp
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Train the model using the training set</span>
@@ -8222,7 +8272,7 @@ Subsequently, we train the model to predict <strong>y</strong> directly and comp
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># If we want to evaluate the model in the original space,</span>
@@ -8271,7 +8321,7 @@ Subsequently, we train the model to predict <strong>y</strong> directly and comp
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Let's check the performance in the two different spaces (log and original)</span><span class="se">\n\n</span><span class="s2">"</span><span class="p">)</span>
@@ -8304,48 +8354,48 @@ Subsequently, we train the model to predict <strong>y</strong> directly and comp
 
 Log space:
 
-🧠 Model predicted in: log space.
-📈 Evaluating in:      log space.
+*** Model predicted in: log space.
+*** Evaluating in:      log space.
 
-📊 Evaluation Results — Test Set
+--- |Evaluation Results| — Test Set
 ────────────────────────────────────
-🔹 MSE : 0.1002
-🔹 RMSE: 0.3165
-🔹 R²  : 0.6936
+· MSE : 0.1002
+· RMSE: 0.3165
+· R²  : 0.6936
 ────────────────────────────────────
 
-🧠 Model predicted in: log space.
-📈 Evaluating in:      log space.
+*** Model predicted in: log space.
+*** Evaluating in:      log space.
 
-📊 Evaluation Results — Train Set
+--- |Evaluation Results| — Train Set
 ────────────────────────────────────
-🔹 MSE : 0.0914
-🔹 RMSE: 0.3024
-🔹 R²  : 0.7149
+· MSE : 0.0914
+· RMSE: 0.3024
+· R²  : 0.7149
 ────────────────────────────────────
 
 ************************************************** 
 
 Original space:
 
-🧠 Model predicted in: log space.
-📈 Evaluating in:      original space.
+*** Model predicted in: log space.
+*** Evaluating in:      original space.
 
-📊 Evaluation Results — Test Set
+--- |Evaluation Results| — Test Set
 ────────────────────────────────────
-🔹 MSE : 0.3978
-🔹 RMSE: 0.6307
-🔹 R²  : 0.7028
+· MSE : 0.3978
+· RMSE: 0.6307
+· R²  : 0.7028
 ────────────────────────────────────
 
-🧠 Model predicted in: log space.
-📈 Evaluating in:      original space.
+*** Model predicted in: log space.
+*** Evaluating in:      original space.
 
-📊 Evaluation Results — Train Set
+--- |Evaluation Results| — Train Set
 ────────────────────────────────────
-🔹 MSE : 0.3788
-🔹 RMSE: 0.6155
-🔹 R²  : 0.7128
+· MSE : 0.3788
+· RMSE: 0.6155
+· R²  : 0.7128
 ────────────────────────────────────
 
 </pre>
@@ -8358,7 +8408,7 @@ Original space:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Let's observe whether the performance improves or worsens if we aim to predict directly y</span>
@@ -8381,24 +8431,24 @@ Original space:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>🧠 Model predicted in: original space.
-📈 Evaluating in:      original space.
+<pre>*** Model predicted in: original space.
+*** Evaluating in:      original space.
 
-📊 Evaluation Results — Test Set
+--- |Evaluation Results| — Test Set
 ────────────────────────────────────
-🔹 MSE : 0.4902
-🔹 RMSE: 0.7002
-🔹 R²  : 0.6339
+· MSE : 0.4902
+· RMSE: 0.7002
+· R²  : 0.6339
 ────────────────────────────────────
 
-🧠 Model predicted in: original space.
-📈 Evaluating in:      original space.
+*** Model predicted in: original space.
+*** Evaluating in:      original space.
 
-📊 Evaluation Results — Train Set
+--- |Evaluation Results| — Train Set
 ────────────────────────────────────
-🔹 MSE : 0.4656
-🔹 RMSE: 0.6823
-🔹 R²  : 0.6471
+· MSE : 0.4656
+· RMSE: 0.6823
+· R²  : 0.6471
 ────────────────────────────────────
 
 </pre>
@@ -8422,7 +8472,7 @@ Original space:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">residuals_log</span> <span class="o">=</span> <span class="n">y_pred_test</span> <span class="o">-</span> <span class="n">y_test</span>
@@ -8438,7 +8488,7 @@ Original space:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">plot_residuals</span><span class="p">(</span><span class="n">residuals</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -8495,7 +8545,7 @@ Original space:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">plot_residuals_histogram</span><span class="p">(</span><span class="n">residuals</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -8557,7 +8607,7 @@ Original space:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Interpretation of the coefficients of our mixed log-log and log-lin regression</span>
@@ -8573,7 +8623,7 @@ Original space:
     <span class="n">intercept</span> <span class="o">=</span> <span class="n">beta</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     <span class="n">coefs</span> <span class="o">=</span> <span class="n">beta</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">🧠 Coefficient Interpretation"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">|*** Coefficient Interpretation ***|"</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"──────────────────────────────────────────────────────────────────────────"</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Intercept (log scale): </span><span class="si">{</span><span class="n">intercept</span><span class="si">:</span><span class="s2">.</span><span class="si">{</span><span class="n">decimals</span><span class="si">}</span><span class="s2">f</span><span class="si">}</span><span class="s2">  →  exp(intercept) = </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">intercept</span><span class="p">)</span><span class="si">:</span><span class="s2">,.</span><span class="si">{</span><span class="n">decimals</span><span class="si">}</span><span class="s2">f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"──────────────────────────────────────────────────────────────────────────"</span><span class="p">)</span>
@@ -8582,7 +8632,7 @@ Original space:
         <span class="n">std</span> <span class="o">=</span> <span class="n">scaling_params_X</span><span class="p">[</span><span class="s1">'std'</span><span class="p">][</span><span class="n">name</span><span class="p">]</span>
         <span class="n">unscaled_b</span> <span class="o">=</span> <span class="n">b</span> <span class="o">/</span> <span class="n">std</span>
 
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">📌 </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">--&gt; </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  β (standardized): </span><span class="si">{</span><span class="n">b</span><span class="si">:</span><span class="s2">+.</span><span class="si">{</span><span class="n">decimals</span><span class="si">}</span><span class="s2">f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  β (unscaled)    : </span><span class="si">{</span><span class="n">unscaled_b</span><span class="si">:</span><span class="s2">+.</span><span class="si">{</span><span class="n">decimals</span><span class="si">}</span><span class="s2">f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
@@ -8621,54 +8671,54 @@ Original space:
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>
-🧠 Coefficient Interpretation
+|*** Coefficient Interpretation ***|
 ──────────────────────────────────────────────────────────────────────────
 Intercept (log scale): 0.575  →  exp(intercept) = 1.776
 ──────────────────────────────────────────────────────────────────────────
 
-📌 AveBedrms
+--&gt; AveBedrms
   β (standardized): +0.047
   β (unscaled)    : +0.503
   → 1σ ↑ in log(X)       → +4.62% change in price
   → +1% ↑ in X         → +0.50% change in price
 
-📌 AveOccup
+--&gt; AveOccup
   β (standardized): -0.123
   β (unscaled)    : -0.535
   → 1σ ↑ in log(X)       → -13.04% change in price
   → +1% ↑ in X         → -0.53% change in price
 
-📌 AveRooms
+--&gt; AveRooms
   β (standardized): -0.058
   β (unscaled)    : -0.261
   → 1σ ↑ in log(X)       → -6.02% change in price
   → +1% ↑ in X         → -0.26% change in price
 
-📌 MedInc
+--&gt; MedInc
   β (standardized): +0.384
   β (unscaled)    : +0.833
   → 1σ ↑ in log(X)       → +31.90% change in price
   → +1% ↑ in X         → +0.83% change in price
 
-📌 Population
+--&gt; Population
   β (standardized): +0.014
   β (unscaled)    : +0.020
   → 1σ ↑ in log(X)       → +1.37% change in price
   → +1% ↑ in X         → +0.02% change in price
 
-📌 HouseAge
+--&gt; HouseAge
   β (standardized): +0.046
   β (unscaled)    : +0.004
   → 1σ ↑ in X            → +4.68% change in price
   → +1 unit ↑ in X     → +0.37% change in price
 
-📌 Latitude
+--&gt; Latitude
   β (standardized): -0.567
   β (unscaled)    : -0.266
   → 1σ ↑ in X            → -43.29% change in price
   → +1 unit ↑ in X     → -23.35% change in price
 
-📌 Longitude
+--&gt; Longitude
   β (standardized): -0.513
   β (unscaled)    : -0.256
   → 1σ ↑ in X            → -40.14% change in price
@@ -8680,15 +8730,207 @@ Intercept (log scale): 0.575  →  exp(intercept) = 1.776
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=936a9d17-4783-4753-b2a0-575139a0c710">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3f42bbbe-2633-4b3c-a5c8-e2e5cce0ee10">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Making-predictions-from-inputs">Making predictions from inputs<a class="anchor-link" href="#Making-predictions-from-inputs">¶</a></h2><ul>
+<li>We need inputs (in original or log scale, depending on our model)</li>
+<li>We standardize inputs</li>
+<li>We use the beta (coefficients) obtained in the training phase to get log(y)</li>
+<li>We exponentiate log(y) and remove the bias through the variance correction to get the predicted value of y</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d4089998-9f18-4341-bfb8-7d56ca2a8094">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">### Done</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Recall what are the predictors</span>
+<span class="n">X</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>AveBedrms</th>
+<th>AveOccup</th>
+<th>AveRooms</th>
+<th>MedInc</th>
+<th>Population</th>
+<th>HouseAge</th>
+<th>Latitude</th>
+<th>Longitude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>0.023530</td>
+<td>0.938270</td>
+<td>1.943640</td>
+<td>2.119287</td>
+<td>5.774552</td>
+<td>41.0</td>
+<td>37.88</td>
+<td>-122.23</td>
+</tr>
+<tr>
+<th>1</th>
+<td>-0.028522</td>
+<td>0.746613</td>
+<td>1.830682</td>
+<td>2.116424</td>
+<td>7.783641</td>
+<td>21.0</td>
+<td>37.86</td>
+<td>-122.22</td>
+</tr>
+<tr>
+<th>2</th>
+<td>0.070874</td>
+<td>1.030426</td>
+<td>2.114825</td>
+<td>1.982022</td>
+<td>6.206576</td>
+<td>52.0</td>
+<td>37.85</td>
+<td>-122.24</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dcf00291-f11f-46dd-a266-9d75e108ddd0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># We use the best model - the one that predicts log(y)</span>
+
+<span class="k">def</span> <span class="nf">make_forecast</span><span class="p">(</span><span class="n">input_values</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""</span>
+<span class="sd">    input_values (dict): dictionary of input features</span>
+<span class="sd">    Returns: predicted MedHouseVal in original scale</span>
+<span class="sd">    """</span>
+
+    <span class="c1"># Apply log transform where needed</span>
+    <span class="n">processed_inputs</span> <span class="o">=</span> <span class="p">{</span> <span class="n">key</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">log_transformed_cols</span> <span class="k">else</span> <span class="n">value</span>
+                        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">input_values</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="p">}</span>
+    <span class="c1"># Standardize</span>
+    <span class="n">scaled_values</span> <span class="o">=</span> <span class="p">{</span> <span class="n">key</span><span class="p">:</span> <span class="p">(</span><span class="n">value</span> <span class="o">-</span> <span class="n">scaling_params_X</span><span class="p">[</span><span class="s1">'mean'</span><span class="p">][</span><span class="n">key</span><span class="p">])</span> <span class="o">/</span> <span class="n">scaling_params_X</span><span class="p">[</span><span class="s1">'std'</span><span class="p">][</span><span class="n">key</span><span class="p">]</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">processed_inputs</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="p">}</span>
+
+    <span class="c1"># Add the intercept and multiply by the coefficients</span>
+    <span class="n">X_vector</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span>
+        <span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">scaled_values</span><span class="o">.</span><span class="n">values</span><span class="p">()))</span>
+                              <span class="p">))</span>
+    <span class="n">prediction</span> <span class="o">=</span> <span class="n">X_vector</span> <span class="o">@</span> <span class="n">beta</span>
+
+    <span class="c1"># Transform back</span>
+    <span class="n">y_hat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">prediction</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">sigma2</span><span class="p">)</span> <span class="c1"># Recall the variance correction</span>
+
+    <span class="c1"># Result</span>
+    <span class="k">return</span> <span class="n">y_hat</span>
+    
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=35dcef0e-d66e-4fa3-b034-a6ab67c13a59">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Insert input values in the correct order</span>
+<span class="c1">## FIrst insert log transformed variables, then the ones left</span>
+<span class="c1">### The values are arbitrarily chosen</span>
+
+<span class="n">input_values</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'AveBedrms'</span><span class="p">:</span> <span class="mf">1.2</span><span class="p">,</span>
+    <span class="s1">'AveOccup'</span><span class="p">:</span> <span class="mf">2.1</span><span class="p">,</span>
+    <span class="s1">'AveRooms'</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+    <span class="s1">'MedInc'</span><span class="p">:</span> <span class="mf">7.5</span><span class="p">,</span>
+    <span class="s1">'Population'</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
+    <span class="s1">'HouseAge'</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+    <span class="s1">'Latitude'</span><span class="p">:</span> <span class="mf">37.81</span><span class="p">,</span>
+    <span class="s1">'Longitude'</span><span class="p">:</span> <span class="o">-</span><span class="mf">122.26</span>
+               <span class="p">}</span>
+
+<span class="n">forecast</span> <span class="o">=</span> <span class="n">make_forecast</span><span class="p">(</span><span class="n">input_values</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The predicted median house value is: </span><span class="se">\n</span><span class="s2">$ </span><span class="si">{</span><span class="mi">100_000</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">forecast</span><span class="si">:</span><span class="s2">,.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>The predicted median house value is: 
+$ 454,039.54
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c40bf41c-8eed-4075-bb66-739802005f34">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">### Done!</span>
 </pre></div>
 </div>
 </div>
