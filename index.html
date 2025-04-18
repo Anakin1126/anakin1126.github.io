@@ -8,28 +8,30 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #222;
+      background-color: #1f1f1f;
       color: white;
-      padding: 1.5rem;
+      padding: 2rem;
       text-align: center;
     }
 
     nav {
-      background-color: #333;
+      background-color: #222;
       padding: 1rem;
       text-align: center;
     }
 
     nav a {
-      color: white;
+      color: #bbb;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
@@ -37,31 +39,46 @@
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
 
     .intro, .projects {
-      background: white;
+      background: #1e1e1e;
       padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      margin-bottom: 2.5rem;
     }
 
     .projects iframe {
-      border: 1px solid #ccc;
+      border: none;
       border-radius: 8px;
       width: 100%;
       height: 600px;
+      margin-top: 1rem;
+    }
+
+    .coming-soon {
+      text-align: center;
+      font-size: 1.4rem;
+      color: #888;
+      margin-top: 3rem;
+    }
+
+    .coming-soon span {
+      font-size: 2rem;
+      display: inline-block;
+      margin-bottom: 1rem;
     }
 
     footer {
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
-      color: #999;
+      color: #666;
+      background-color: #1a1a1a;
     }
   </style>
 </head>
@@ -74,7 +91,7 @@
 
   <nav>
     <a href="#">Home</a>
-    <a href="#">Projects</a>
+    <a href="#projects">Projects</a>
     <a href="#">About</a>
   </nav>
 
@@ -91,18 +108,17 @@
       </p>
     </div>
 
-    <div class="projects">
+    <div id="projects" class="projects">
       <h2>📈 Linear Regression from Scratch</h2>
       <p>
         A hands-on implementation of a linear regression model using the normal equation, applied to the California Housing Prices dataset.
       </p>
-      <iframe src="normal_equation.html"></iframe>
+      <iframe src="lin_reg_norm_eq.html"></iframe>
     </div>
-  </div>
 
-
-    <div class="projects">
-      🚧 Projects coming soon...
+    <div class="coming-soon">
+      <span>🚧</span><br>
+      Other projects coming soon...
     </div>
   </div>
 
